@@ -1,5 +1,5 @@
 {% set name = "bfio" %}
-{% set version = "2.3.0" %}
+{% set version = "2.3.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/PolusAI/{{ name }}/archive/refs/tags/v{{ version }}.tar.gz
-  sha256: 2ecc426331323aec9bd4cc66f4fad21dd6ada7950de756d07c1da1ac5257f991
+  sha256: f39f2a3a149814012380949b5f10f3012539f29fa77fe06d45b3fc41762686dc
   patches:
     - setup.patch
 
@@ -41,7 +41,7 @@ test:
 about:
   home: https://pypi.org/project/bfio/
   summary: Simple reading and writing classes for tiled tiffs using Bioformats.
-  dev_url: https://github.com/PolusAI/bfio  
+  dev_url: https://github.com/PolusAI/bfio
   license: MIT
   license_file: LICENSE
 
