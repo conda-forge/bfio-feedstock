@@ -1,5 +1,5 @@
 diff --git a/setup.py b/setup.py
-index c540e7b..4363dd4 100644
+index c540e7b..398d3f8 100644
 --- a/setup.py
 +++ b/setup.py
 @@ -23,7 +23,7 @@ setup(
@@ -7,7 +7,7 @@ index c540e7b..4363dd4 100644
          "Source": "https://github.com/labshare/bfio",
      },
 -    packages=find_packages(),
-+    packages=find_packages(exclude=("test", "tests", "test.*", "tests.*"))
++    packages=find_packages(exclude=("test", "tests", "test.*", "tests.*")),
      package_data={"bfio": ["VERSION"]},
      classifiers=[
          "Development Status :: 5 - Production/Stable",
