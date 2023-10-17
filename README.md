@@ -148,4 +148,5 @@ Feedstock Maintainers
 * [@Nicholas-Schaub](https://github.com/Nicholas-Schaub/)
 * [@goanpeca](https://github.com/goanpeca/)
 * [@jaimergp](https://github.com/jaimergp/)
+* [@sameeul](https://github.com/sameeul/)
 
