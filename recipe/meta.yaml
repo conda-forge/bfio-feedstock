@@ -18,6 +18,7 @@ requirements:
   host:
     - pip
     - python >=3.8
+  run:
     - imagecodecs >=2021.2.26
     - jpype1
     - numpy >=1.20.1
