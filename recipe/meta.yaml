@@ -16,12 +16,11 @@ build:
 
 requirements:
   host:
-    - pip
-    - python >=3.8
     - imagecodecs >=2021.2.26
     - jpype1
     - numpy >=1.20.1
     - ome-types >=0.4.2
+    - pip
     - python >=3.8
     - scyjava
     - tifffile >=2021.8.30
