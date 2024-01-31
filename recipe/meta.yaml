@@ -1,5 +1,5 @@
 {% set name = "bfio" %}
-{% set version = "2.3.3" %}
+{% set version = "2.3.4" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/PolusAI/{{ name }}/archive/refs/tags/v{{ version }}.tar.gz
-  sha256: 3dccb4e06e742507349f1f96fe5d913e26d1cc30e3af650aea4a8b9fd8db1a04
+  sha256: 636baf82eb527bbdf858d7b9ff137d6d80ae0523212b7fb63842dd962bba41b4
   patches:
     - setup.patch
 
