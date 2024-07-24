@@ -8,7 +8,8 @@ package:
 source:
   url: https://github.com/PolusAI/{{ name }}/archive/refs/tags/v{{ version }}.tar.gz
   sha256: ad92d5755f7a97f1c040179929038fecd58a16f802d35736de9a9c3ba55ebca6
-
+  patches:
+    - numpy_2.patch
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
