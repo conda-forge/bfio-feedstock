@@ -1,5 +1,5 @@
 {% set name = "bfio" %}
-{% set version = "2.4.1" %}
+{% set version = "2.4.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/PolusAI/{{ name }}/archive/refs/tags/v{{ version }}.tar.gz
-  sha256: 662ffb6e8a898937579d05e362236a867a3817ed650aa50ff029c915c40b749f
+  sha256: 24252cd8b514d56d9e247cb82e6503b2264ea7165c907e34c3cdfae3cc17f500
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
@@ -43,7 +43,7 @@ test:
     - pip list
     - pip check
   requires:
-    - pip
+    - pip <24.2
 
 about:
   home: https://pypi.org/project/bfio/
