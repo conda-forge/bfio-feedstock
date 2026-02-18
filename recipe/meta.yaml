@@ -34,8 +34,8 @@ requirements:
     - python >={{ python_min }}
     - scyjava
     - tifffile >=2021.8.30
-    - zarr >=2.6.1
-    - bfiocpp
+    - zarr >=3.0.0
+    - bfiocpp >=0.4.0
 
 test:
   imports:
