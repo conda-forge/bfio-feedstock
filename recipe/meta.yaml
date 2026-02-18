@@ -1,5 +1,5 @@
 {% set name = "bfio" %}
-{% set version = "2.4.10" %}
+{% set version = "2.5.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/PolusAI/{{ name }}/archive/refs/tags/v{{ version }}.tar.gz
-  sha256: 2d461b9c0686524ddcbf6ed36c17280ec31a20d55132266b0519635d653e4107
+  sha256: 543fd59480db80a5bc0a77dd3e6f461674ed979dc36f4b74a7f7e376b00a2092
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
@@ -34,8 +34,8 @@ requirements:
     - python >={{ python_min }}
     - scyjava
     - tifffile >=2021.8.30
-    - zarr >=2.6.1
-    - bfiocpp
+    - zarr >=3.0.0
+    - bfiocpp >=0.4.0
 
 test:
   imports:
